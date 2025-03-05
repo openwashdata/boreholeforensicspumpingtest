@@ -3,7 +3,7 @@ Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: c(
     person("Emmanuel", "Mhango", , "emmanuellmhango@gmail.com", role = c("aut", "cre"),
-           comment = c(ORCID = "XXXX-XXXX-XXXX-XXXX")),
+           comment = c(ORCID = "0000-0003-3197-6244")),
     person("Finlay", "Paterson", role = "aut"),
     person("Paul", "Kumpukwe", role = "aut"),
     person("Gloria", "Musopole", role = "ctb"),

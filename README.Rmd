@@ -123,7 +123,6 @@ readr::read_csv("data-raw/dictionary.csv") |>
 
 ``` r
 library(boreholeforensicspumpingtest)
-# Load necessary libraries
 library(ggplot2)
 library(lubridate)
 

@@ -10,7 +10,7 @@ Authors@R: c(
     person("Gloria", "Maliana", role = "ctb"),
     person("Florence", "Chirwa", role = "ctb"),
     person("Given", "Nyasulu", role = "ctb"),
-    person("Feston", "Bwanyula", role = "ctb")
+    person("Feston", "Bwanyula", role ="ctb")
   )
 Description: What the package does (one paragraph).
 License: CC BY 4.0

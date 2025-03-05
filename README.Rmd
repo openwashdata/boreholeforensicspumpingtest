@@ -140,6 +140,7 @@ ggplot(boreholeforensicspumpingtest, aes(x = year, y = static_water_level_metres
   )
 
 ```
+<img src="man/figures/staticwaterlevel.png" width="100%" style="display: block; margin: auto;" />
 
 ## License
 

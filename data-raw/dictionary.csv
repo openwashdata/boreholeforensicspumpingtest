@@ -1,10 +1,16 @@
 directory,file_name,variable_name,variable_type,description
-data/,boreholeforensicspumpingtest.rda,date_of_survey_or_test,character,Date on which the borehole pumping test was conducted.
+data/,boreholeforensicspumpingtest.rda,date_of_test,character,Date on which the borehole pumping test was conducted.
+data/,boreholeforensicspumpingtest.rda,administrative_region,character,area where the water point is located
+data/,boreholeforensicspumpingtest.rda,latitude,numeric,GPS location of the water point (latitude)
+data/,boreholeforensicspumpingtest.rda,longitude,numeric,GPS location of the water point (longitude)
+data/,boreholeforensicspumpingtest.rda,name,character,name of the water point
+data/,boreholeforensicspumpingtest.rda,type_of_waterpoint,character,type of the water point
+data/,boreholeforensicspumpingtest.rda,description,character,description of water point
+data/,boreholeforensicspumpingtest.rda,type_of_test,character,The type of pumping test performed on the borehole.
 data/,boreholeforensicspumpingtest.rda,is_it_possible_to_complete_pumping_test,character,Indicates whether the pumping test was successfully completed.
 data/,boreholeforensicspumpingtest.rda,specify_why_not_possible_to_complete_pumping_test,character,"Reason why the pumping test could not be completed, if applicable."
 data/,boreholeforensicspumpingtest.rda,water_point_committee_permission,character,Whether permission was granted by the water point committee to conduct the test.
 data/,boreholeforensicspumpingtest.rda,district_water_office_permission,character,Whether permission was granted by the district water office to conduct the test.
-data/,boreholeforensicspumpingtest.rda,type_of_test,character,The type of pumping test performed on the borehole.
 data/,boreholeforensicspumpingtest.rda,static_water_level_metres_below_reference_point_before_start_of_test,numeric,Water level below the reference point before the start of the test (in meters).
 data/,boreholeforensicspumpingtest.rda,water_level_reference_point,character,"The reference point used to measure water level (e.g., top of casing, ground level)."
 data/,boreholeforensicspumpingtest.rda,other_water_level_reference_point,character,"Additional reference point used for measuring water level, if applicable."

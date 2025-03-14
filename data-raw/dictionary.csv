@@ -1,11 +1,11 @@
 directory,file_name,variable_name,variable_type,description
-data/,boreholeforensicspumpingtest.rda,date_of_test,character,Date on which the borehole pumping test was conducted.
-data/,boreholeforensicspumpingtest.rda,administrative_region,character,area where the water point is located
-data/,boreholeforensicspumpingtest.rda,latitude,numeric,GPS location of the water point (latitude)
-data/,boreholeforensicspumpingtest.rda,longitude,numeric,GPS location of the water point (longitude)
-data/,boreholeforensicspumpingtest.rda,name,character,name of the water point
-data/,boreholeforensicspumpingtest.rda,type_of_waterpoint,character,type of the water point
-data/,boreholeforensicspumpingtest.rda,description,character,description of water point
+data/,boreholeforensicspumpingtest.rda,date_of_test,character,date on which the borehole pumping test was conducted.
+data/,boreholeforensicspumpingtest.rda,administrative_region,character,area where the water point is located.
+data/,boreholeforensicspumpingtest.rda,latitude,numeric,GPS location of the water point (latitude).
+data/,boreholeforensicspumpingtest.rda,longitude,numeric,GPS location of the water point (longitude).
+data/,boreholeforensicspumpingtest.rda,name,character,name of the water point.
+data/,boreholeforensicspumpingtest.rda,type_of_waterpoint,character,type of the water point.
+data/,boreholeforensicspumpingtest.rda,description,character,description of water point.
 data/,boreholeforensicspumpingtest.rda,type_of_test,character,The type of pumping test performed on the borehole.
 data/,boreholeforensicspumpingtest.rda,is_it_possible_to_complete_pumping_test,character,Indicates whether the pumping test was successfully completed.
 data/,boreholeforensicspumpingtest.rda,specify_why_not_possible_to_complete_pumping_test,character,"Reason why the pumping test could not be completed, if applicable."

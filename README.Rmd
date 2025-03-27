@@ -44,12 +44,15 @@ used, and observations on borehole performance, such as whether the
 water level stabilized during pumping and whether the borehole passed
 the test.
 
-Potential Uses of the Dataset 1. Hydrogeological Analysis: Evaluating
-groundwater availability and borehole efficiency. 2. Environmental
-Studies: Assessing water quality parameters. 3. Infrastructure Planning:
-Supporting water resource management and borehole maintenance decisions.
-4. Regulatory Compliance: Ensuring boreholes meet required operational
-standards.
+Potential Uses of the Dataset 
+
+1. Hydrogeological Analysis: Evaluating groundwater availability and borehole efficiency. 
+
+2. Environmental Studies: Assessing water quality parameters. 
+
+3. Infrastructure Planning: Supporting water resource management and borehole maintenance decisions.
+
+4. Regulatory Compliance: Ensuring boreholes meet required operational standards.
 
 
 ## Installation
@@ -130,6 +133,29 @@ readr::read_csv("data-raw/dictionary.csv") |>
 ```
 
 ## Example
+
+```{r}
+library(boreholeforensicspumpingtest)
+library(ggplot2)
+library(lubridate)
+
+# Convert date_of_survey_or_test to Date format and extract year
+boreholeforensicspumpingtest$year <- year(mdy(boreholeforensicspumpingtest$date_of_survey_or_test))
+
+boreholeforensicspumpingtest
+
+# Create the plot
+ggplot(boreholeforensicspumpingtest, aes(x = year, y = static_water_level_metres_below_reference_point_before_start_of_test)) +
+  geom_point() +
+  theme_minimal() +
+  labs(
+    title = "Static Water Level by Year",
+    x = "Year",
+    y = "Static Water Level (m below reference point)"
+  )
+```
+
+
 ``` r
 library(boreholeforensicspumpingtest)
 library(ggplot2)

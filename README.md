@@ -807,7 +807,7 @@ Additional comments or observations about the pumping test.
 # Create the plot
 library(boreholeforensicspumpingtest)
 
-# Extract distinct year
+# Extract year
 year <- year(boreholeforensicspumpingtest$date_of_test)
 
 # Create the plot

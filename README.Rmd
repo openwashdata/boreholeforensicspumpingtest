@@ -34,7 +34,7 @@ knitr::opts_chunk$set(
 
 This dataset contains borehole forensic pumping test data, capturing key
 parameters related to groundwater extraction, borehole performance, and
-water quality assessments. It includes information on the test
+water quality assessments. The data was collected by BASEFlow. It includes information on the test
 conditions, water levels, pumping rates, flow measurement methods, and
 water quality indicators such as pH, turbidity, and electrical
 conductivity.

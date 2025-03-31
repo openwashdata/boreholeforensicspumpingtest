@@ -1,45 +1,45 @@
-directory,file_name,Variable Name,Variable Type,Updated Description
+directory,file_name,variable_name,variable_type,description
 data/,boreholeforensicspumpingtest.rda,date_of_test,Date,Date the borehole pumping test was conducted.
-data/,boreholeforensicspumpingtest.rda,administrative_region,Character,Geographic region where the water point is located.
-data/,boreholeforensicspumpingtest.rda,latitude,Numeric,Latitude coordinate of the water point (GPS location).
-data/,boreholeforensicspumpingtest.rda,longitude,Numeric,Longitude coordinate of the water point (GPS location).
-data/,boreholeforensicspumpingtest.rda,name,Character,Name of the water point or borehole.
-data/,boreholeforensicspumpingtest.rda,type_of_waterpoint,Character,"Classification of the water point (e.g., borehole, well)."
-data/,boreholeforensicspumpingtest.rda,description,Character,A brief description of the water point.
-data/,boreholeforensicspumpingtest.rda,type_of_test,Character,Type of pumping test conducted on the borehole.
-data/,boreholeforensicspumpingtest.rda,pumping_test_possible,Character,Indicates if the pumping test was successfully completed.
-data/,boreholeforensicspumpingtest.rda,pumping_test_not_possible_reason,Character,"Reason why the pumping test could not be completed, if applicable."
-data/,boreholeforensicspumpingtest.rda,water_point_committee_permission,Character,Indicates whether the water point committee approved the test.
-data/,boreholeforensicspumpingtest.rda,district_water_office_permission,Character,Indicates whether the district water office approved the test.
-data/,boreholeforensicspumpingtest.rda,static_water_level,Numeric,Water level below the reference point before the test started (in meters).
-data/,boreholeforensicspumpingtest.rda,water_level_reference_point,Character,"Reference point used to measure the water level (e.g., top of casing, ground level)."
-data/,boreholeforensicspumpingtest.rda,other_water_level_reference_point,Character,"Additional reference point for measuring water level, if applicable."
-data/,boreholeforensicspumpingtest.rda,reference_level,Numeric,Measurement of the reference level relative to ground level (in meters).
-data/,boreholeforensicspumpingtest.rda,pump_intake_depth,Numeric,Depth of the pump intake within the borehole (in meters).
-data/,boreholeforensicspumpingtest.rda,total_hole_depth,Numeric,Total depth of the borehole (in meters).
-data/,boreholeforensicspumpingtest.rda,was_a_water_level_logger_used,Character,Indicates if a water level logger was used during the test.
-data/,boreholeforensicspumpingtest.rda,was_a_flow_meter_used,Character,Indicates if a flow meter was used during the pumping test.
-data/,boreholeforensicspumpingtest.rda,other_flow_meter_used,Logical,Indicates if an alternative flow meter was used during the test.
-data/,boreholeforensicspumpingtest.rda,bucket_size_in_litres,Numeric,Volume of the bucket used for manual flow measurements (in liters).
-data/,boreholeforensicspumpingtest.rda,index_1,Logical,Internal logical index variable for tracking purposes.
-data/,boreholeforensicspumpingtest.rda,time_in_mins,Logical,Indicates if time was recorded in minutes during the test.
-data/,boreholeforensicspumpingtest.rda,water_level_in_mbrp,Logical,Indicates if the water level was measured in meters below the reference point.
-data/,boreholeforensicspumpingtest.rda,flowmeter_total,Logical,Indicates if the total flowmeter reading was recorded.
-data/,boreholeforensicspumpingtest.rda,flow_rate_in_liters_per_second,Logical,Indicates if the flow rate was measured in liters per second.
-data/,boreholeforensicspumpingtest.rda,flow_rate_method,Logical,Indicates if the method for measuring flow rate was recorded.
-data/,boreholeforensicspumpingtest.rda,index_2,Logical,A second internal logical index variable for tracking purposes.
-data/,boreholeforensicspumpingtest.rda,time_of_sample_in_min,Logical,Indicates if the sampling time was recorded in minutes.
-data/,boreholeforensicspumpingtest.rda,ec_in_ms_per_cm,Logical,Indicates if electrical conductivity (EC) was measured in millisiemens per centimeter.
-data/,boreholeforensicspumpingtest.rda,tds_ppt,Logical,Indicates if total dissolved solids (TDS) were recorded in parts per thousand (ppt).
-data/,boreholeforensicspumpingtest.rda,temperature_in_celcius,Logical,Indicates if the temperature of the water was recorded in degrees Celsius.
-data/,boreholeforensicspumpingtest.rda,ph,Logical,Indicates if the pH level of the water was measured.
-data/,boreholeforensicspumpingtest.rda,turbidity_ntu,Logical,Indicates if turbidity was measured in nephelometric turbidity units (NTU).
-data/,boreholeforensicspumpingtest.rda,Imhoff_cone_cubic_centimeter_per_liter,Logical,Indicates if sediment concentration was measured using an Imhoff cone.
-data/,boreholeforensicspumpingtest.rda,water_level_stabilised,Character,Indicates if the water level stabilized during pumping at 0.25 liters per second.
-data/,boreholeforensicspumpingtest.rda,dwl_at_0.25lps,Numeric,Depth to the water level at a 0.25 liters per second pumping rate (in meters).
-data/,boreholeforensicspumpingtest.rda,max_pumping_rate,Numeric,Maximum pumping rate successfully achieved during the test (in liters per second).
-data/,boreholeforensicspumpingtest.rda,dwl_at_max_rate,Numeric,Depth to the water level at the maximum pumping rate (in meters).
-data/,boreholeforensicspumpingtest.rda,silt_ejected_during_test,Character,Indicates whether silt was observed being ejected from the borehole during the test.
-data/,boreholeforensicspumpingtest.rda,borehole_passed,Character,Indicates if the borehole passed the pumping test based on performance criteria.
-data/,boreholeforensicspumpingtest.rda,other_borehole_pass_reason,Logical,"Additional explanation regarding the borehole’s performance in the pumping test, if applicable."
-data/,boreholeforensicspumpingtest.rda,comments_on_pumping_test,Character,Additional comments or observations regarding the pumping test.
+data/,boreholeforensicspumpingtest.rda,administrative_region,character,Geographic region where the water point is located.
+data/,boreholeforensicspumpingtest.rda,latitude,numeric,Latitude coordinate of the water point.
+data/,boreholeforensicspumpingtest.rda,longitude,numeric,Longitude coordinate of the water point.
+data/,boreholeforensicspumpingtest.rda,name,character,Name of the water point or borehole.
+data/,boreholeforensicspumpingtest.rda,type_of_waterpoint,character,Classification of the water point.
+data/,boreholeforensicspumpingtest.rda,description,character,A brief description of the water point.
+data/,boreholeforensicspumpingtest.rda,type_of_test,character,Type of pumping test conducted on the borehole.
+data/,boreholeforensicspumpingtest.rda,pumping_test_possible,character,Indicates if the pumping test was successfully completed.
+data/,boreholeforensicspumpingtest.rda,pumping_test_not_possible_reason,character,"Reason why the pumping test could not be completed, if applicable."
+data/,boreholeforensicspumpingtest.rda,water_point_committee_permission,character,Indicates whether the water point committee approved the test.
+data/,boreholeforensicspumpingtest.rda,district_water_office_permission,character,Indicates whether the district water office approved the test.
+data/,boreholeforensicspumpingtest.rda,static_water_level,numeric,Water level below the reference point before the test started (in meters).
+data/,boreholeforensicspumpingtest.rda,water_level_reference_point,character,Reference point used to measure the water level.
+data/,boreholeforensicspumpingtest.rda,other_water_level_reference_point,character,"Additional reference point for measuring water level, if applicable."
+data/,boreholeforensicspumpingtest.rda,reference_level,numeric,Measurement of the reference level relative to ground level (in meters).
+data/,boreholeforensicspumpingtest.rda,pump_intake_depth,numeric,Depth of the pump intake within the borehole (in meters).
+data/,boreholeforensicspumpingtest.rda,total_hole_depth,numeric,Total depth of the borehole (in meters).
+data/,boreholeforensicspumpingtest.rda,was_a_water_level_logger_used,character,Indicates if a water level logger was used during the test.
+data/,boreholeforensicspumpingtest.rda,was_a_flow_meter_used,character,Indicates if a flow meter was used during the pumping test.
+data/,boreholeforensicspumpingtest.rda,other_flow_meter_used,logical,Indicates if an alternative flow meter was used during the test.
+data/,boreholeforensicspumpingtest.rda,bucket_size_in_litres,numeric,Volume of the bucket used for manual flow measurements (in liters).
+data/,boreholeforensicspumpingtest.rda,index_1,logical,Internal logical index variable for tracking purposes.
+data/,boreholeforensicspumpingtest.rda,time_in_mins,logical,Indicates if time was recorded in minutes during the test.
+data/,boreholeforensicspumpingtest.rda,water_level_in_mbrp,logical,Indicates if the water level was measured in meters below the reference point.
+data/,boreholeforensicspumpingtest.rda,flowmeter_total,logical,Indicates if the total flowmeter reading was recorded.
+data/,boreholeforensicspumpingtest.rda,flow_rate_in_liters_per_second,logical,Indicates if the flow rate was measured in liters per second.
+data/,boreholeforensicspumpingtest.rda,flow_rate_method,logical,Indicates if the method for measuring flow rate was recorded.
+data/,boreholeforensicspumpingtest.rda,index_2,logical,A second internal logical index variable for tracking purposes.
+data/,boreholeforensicspumpingtest.rda,time_of_sample_in_min,logical,Indicates if the sampling time was recorded in minutes.
+data/,boreholeforensicspumpingtest.rda,ec_in_ms_per_cm,logical,Indicates if electrical conductivity (EC) was measured in millisiemens per centimeter.
+data/,boreholeforensicspumpingtest.rda,tds_ppt,logical,Indicates if total dissolved solids (TDS) were recorded in parts per thousand (ppt).
+data/,boreholeforensicspumpingtest.rda,temperature_in_celcius,logical,Indicates if the temperature of the water was recorded in degrees Celsius.
+data/,boreholeforensicspumpingtest.rda,ph,logical,Indicates if the pH level of the water was measured.
+data/,boreholeforensicspumpingtest.rda,turbidity_ntu,logical,Indicates if turbidity was measured in nephelometric turbidity units (NTU).
+data/,boreholeforensicspumpingtest.rda,Imhoff_cone_cubic_centimeter_per_liter,logical,Indicates if sediment concentration was measured using an Imhoff cone.
+data/,boreholeforensicspumpingtest.rda,water_level_stabilised,character,Indicates if the water level stabilized during pumping at 0.25 liters per second.
+data/,boreholeforensicspumpingtest.rda,dwl_at_0.25lps,numeric,Depth to the water level at a 0.25 liters per second pumping rate (in meters).
+data/,boreholeforensicspumpingtest.rda,max_pumping_rate,numeric,Maximum pumping rate successfully achieved during the test (in liters per second).
+data/,boreholeforensicspumpingtest.rda,dwl_at_max_rate,numeric,Depth to the water level at the maximum pumping rate (in meters).
+data/,boreholeforensicspumpingtest.rda,silt_ejected_during_test,character,Indicates whether silt was observed being ejected from the borehole during the test.
+data/,boreholeforensicspumpingtest.rda,borehole_passed,character,Indicates if the borehole passed the pumping test based on performance criteria.
+data/,boreholeforensicspumpingtest.rda,other_borehole_pass_reason,logical,"Additional explanation regarding the boreholes performance in the pumping test, if applicable."
+data/,boreholeforensicspumpingtest.rda,comments_on_pumping_test,character,Additional comments or observations regarding the pumping test.

@@ -34,7 +34,7 @@ knitr::opts_chunk$set(
 
 This dataset contains borehole forensic pumping test data, capturing key
 parameters related to groundwater extraction, borehole performance, and
-water quality assessments. It includes information on the test
+water quality assessments. The data was collected by BASEFlow. It includes information on the test
 conditions, water levels, pumping rates, flow measurement methods, and
 water quality indicators such as pH, turbidity, and electrical
 conductivity.
@@ -44,12 +44,15 @@ used, and observations on borehole performance, such as whether the
 water level stabilized during pumping and whether the borehole passed
 the test.
 
-Potential Uses of the Dataset 1. Hydrogeological Analysis: Evaluating
-groundwater availability and borehole efficiency. 2. Environmental
-Studies: Assessing water quality parameters. 3. Infrastructure Planning:
-Supporting water resource management and borehole maintenance decisions.
-4. Regulatory Compliance: Ensuring boreholes meet required operational
-standards.
+Potential Uses of the Dataset 
+
+1. Hydrogeological Analysis: Evaluating groundwater availability and borehole efficiency. 
+
+2. Environmental Studies: Assessing water quality parameters. 
+
+3. Infrastructure Planning: Supporting water resource management and borehole maintenance decisions.
+
+4. Regulatory Compliance: Ensuring boreholes meet required operational standards.
 
 
 ## Installation
@@ -71,6 +74,8 @@ library(readr)
 library(stringr)
 library(gt)
 library(kableExtra)
+library(ggplot2)
+library(lubridate)
 ```
 
 Alternatively, you can download the individual datasets as a CSV or XLSX
@@ -107,7 +112,7 @@ library(boreholeforensicspumpingtest)
 
 ### boreholeforensicspumpingtest
 
-The dataset `boreholeforensicspumpingtest` contains data about ... It has
+The dataset `boreholeforensicspumpingtest` has
 `r nrow(boreholeforensicspumpingtest)` observations and `r ncol(boreholeforensicspumpingtest)`
 variables
 
@@ -130,16 +135,16 @@ readr::read_csv("data-raw/dictionary.csv") |>
 ```
 
 ## Example
-``` r
-library(boreholeforensicspumpingtest)
-library(ggplot2)
-library(lubridate)
 
-# Convert date_of_survey_or_test to Date format and extract year
-boreholeforensicspumpingtest$year <- year(mdy(boreholeforensicspumpingtest$date_of_survey_or_test))
+```{r}
+# Create the plot
+library(boreholeforensicspumpingtest)
+
+# Extract distinct year
+year <- year(boreholeforensicspumpingtest$date_of_test)
 
 # Create the plot
-ggplot(boreholeforensicspumpingtest, aes(x = year, y = static_water_level_metres_below_reference_point_before_start_of_test)) +
+ggplot(boreholeforensicspumpingtest, aes(x = year, y = static_water_level)) +
   geom_point() +
   theme_minimal() +
   labs(
@@ -147,9 +152,9 @@ ggplot(boreholeforensicspumpingtest, aes(x = year, y = static_water_level_metres
     x = "Year",
     y = "Static Water Level (m below reference point)"
   )
-```
 
-<img src="man/figures/staticwaterlevel.png" width="100%" style="display: block; margin: auto;" />
+
+```
 
 ## License
 

@@ -1,7 +1,7 @@
-# Description ------------------------------------------------------------------
+# Description
 # R script to process uploaded raw data into a tidy, analysis-ready data frame
 
-# Load packages ----------------------------------------------------------------
+# Load packages
 ## Run the following code in console if you don't have the packages
 ## install.packages(c("usethis", "fs", "here", "readr", "readxl", "openxlsx", "stringi"))
 library(usethis)
@@ -13,11 +13,11 @@ library(ggplot2)
 library(lubridate)
 library(stringi)
 
-# Read data --------------------------------------------------------------------
+# Read data
 data_in <- readr::read_csv("data-raw/Borehole Forensics 4 - Pumping Test.csv",
                            locale = readr::locale(encoding = "UTF-8"))
 
-# Function to check for non-UTF-8 characters -----------------------------------
+# Function to check for non-UTF-8 characters
 check_utf8 <- function(df) {
   invalid_cols <- sapply(df, function(column) {
     if (!is.character(column)) return(FALSE) # Only check character columns
@@ -36,7 +36,7 @@ check_utf8 <- function(df) {
   }
 }
 
-# Check and Fix Encoding ------------------------------------------------------
+# Check and Fix Encoding
 check_utf8(data_in)
 
 data_in[] <- lapply(data_in, function(x) {
@@ -50,10 +50,10 @@ data_in[] <- lapply(data_in, function(x) {
 # Re-check encoding after conversion
 check_utf8(data_in)
 
-# Assign data to a variable ---------------------------------------------------
+# Assign data to a variable
 boreholeforensicspumpingtest <- data_in
 
-# Tidy data -------------------------------------------------------------------
+# Rename columns
 boreholeforensicspumpingtest <- boreholeforensicspumpingtest |>
   mutate(date_of_test = lubridate::dmy(date_of_test)) |>  # Convert to Date class
   rename(
@@ -71,7 +71,7 @@ boreholeforensicspumpingtest <- boreholeforensicspumpingtest |>
     other_borehole_pass_reason = specify_other_borehole_pass_a_pumping_test
   )
 
-# Export Data ------------------------------------------------------------------
+# Export Data
 usethis::use_data(boreholeforensicspumpingtest, overwrite = TRUE)
 fs::dir_create(here::here("inst", "extdata"))
 
@@ -81,11 +81,12 @@ readr::write_csv(boreholeforensicspumpingtest,
 openxlsx::write.xlsx(boreholeforensicspumpingtest,
                      here::here("inst", "extdata", paste0("boreholeforensicspumpingtest", ".xlsx")))
 
-# Create the plot for Static Water Level by Year -------------------------------
+# Create the plot for Static Water Level by Year
+# Extract year from date_of_test
 boreholeforensicspumpingtest <- boreholeforensicspumpingtest |>
-  mutate(year = year(date_of_test))  # Extract year from date_of_test
+  mutate(year = year(date_of_test))
 
-# Plot
+# Plot a graph
 ggplot(boreholeforensicspumpingtest, aes(x = year, y = static_water_level)) +
   geom_point() +
   theme_minimal() +

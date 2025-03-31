@@ -7,7 +7,9 @@ library(usethis)
 library(fs)
 library(here)
 library(readr)
-
+library(dplyr)
+library(ggplot2)
+library(lubridate)
 # Read data --------------------------------------------------------------------
 
 data_in <- readr::read_csv("data-raw/Borehole Forensics 4 - Pumping Test.csv")
@@ -40,3 +42,18 @@ readr::write_csv(boreholeforensicspumpingtest,
                  here::here("inst", "extdata", paste0("boreholeforensicspumpingtest", ".csv")))
 openxlsx::write.xlsx(boreholeforensicspumpingtest,
                      here::here("inst", "extdata", paste0("boreholeforensicspumpingtest", ".xlsx")))
+
+# Create the plot for Static Water Level by Year
+# Extract distinct year
+year <- year(boreholeforensicspumpingtest$date_of_test)
+
+# Plot
+ggplot(boreholeforensicspumpingtest, aes(x = year, y = static_water_level)) +
+  geom_point() +
+  theme_minimal() +
+  labs(
+    title = "Static Water Level by Year",
+    x = "Year",
+    y = "Static Water Level (m below reference point)"
+  )
+

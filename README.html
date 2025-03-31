@@ -1,99 +1,692 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+@font-face {
+font-family: octicons-link;
+src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+body {
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+color: #333;
+font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 16px;
+line-height: 1.6;
+word-wrap: break-word;
+}
+a {
+background-color: transparent;
+}
+a:active,
+a:hover {
+outline: 0;
+}
+strong {
+font-weight: bold;
+}
+h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+img {
+border: 0;
+}
+hr {
+box-sizing: content-box;
+height: 0;
+}
+pre {
+overflow: auto;
+}
+code,
+kbd,
+pre {
+font-family: monospace, monospace;
+font-size: 1em;
+}
+input {
+color: inherit;
+font: inherit;
+margin: 0;
+}
+html input[disabled] {
+cursor: default;
+}
+input {
+line-height: normal;
+}
+input[type="checkbox"] {
+box-sizing: border-box;
+padding: 0;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+td,
+th {
+padding: 0;
+}
+* {
+box-sizing: border-box;
+}
+input {
+font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a {
+color: #4078c0;
+text-decoration: none;
+}
+a:hover,
+a:active {
+text-decoration: underline;
+}
+hr {
+height: 0;
+margin: 15px 0;
+overflow: hidden;
+background: transparent;
+border: 0;
+border-bottom: 1px solid #ddd;
+}
+hr:before {
+display: table;
+content: "";
+}
+hr:after {
+display: table;
+clear: both;
+content: "";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 15px;
+margin-bottom: 15px;
+line-height: 1.1;
+}
+h1 {
+font-size: 30px;
+}
+h2 {
+font-size: 21px;
+}
+h3 {
+font-size: 16px;
+}
+h4 {
+font-size: 14px;
+}
+h5 {
+font-size: 12px;
+}
+h6 {
+font-size: 11px;
+}
+blockquote {
+margin: 0;
+}
+ul,
+ol {
+padding: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+ol ol,
+ul ol {
+list-style-type: lower-roman;
+}
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+list-style-type: lower-alpha;
+}
+dd {
+margin-left: 0;
+}
+code {
+font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+font-size: 12px;
+}
+pre {
+margin-top: 0;
+margin-bottom: 0;
+font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.select::-ms-expand {
+opacity: 0;
+}
+.octicon {
+font: normal normal normal 16px/1 octicons-link;
+display: inline-block;
+text-decoration: none;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.octicon-link:before {
+content: '\f05c';
+}
+.markdown-body:before {
+display: table;
+content: "";
+}
+.markdown-body:after {
+display: table;
+clear: both;
+content: "";
+}
+.markdown-body>*:first-child {
+margin-top: 0 !important;
+}
+.markdown-body>*:last-child {
+margin-bottom: 0 !important;
+}
+a:not([href]) {
+color: inherit;
+text-decoration: none;
+}
+.anchor {
+display: inline-block;
+padding-right: 2px;
+margin-left: -18px;
+}
+.anchor:focus {
+outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 1em;
+margin-bottom: 16px;
+font-weight: bold;
+line-height: 1.4;
+}
+h1 .octicon-link,
+h2 .octicon-link,
+h3 .octicon-link,
+h4 .octicon-link,
+h5 .octicon-link,
+h6 .octicon-link {
+color: #000;
+vertical-align: middle;
+visibility: hidden;
+}
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+text-decoration: none;
+}
+h1:hover .anchor .octicon-link,
+h2:hover .anchor .octicon-link,
+h3:hover .anchor .octicon-link,
+h4:hover .anchor .octicon-link,
+h5:hover .anchor .octicon-link,
+h6:hover .anchor .octicon-link {
+visibility: visible;
+}
+h1 {
+padding-bottom: 0.3em;
+font-size: 2.25em;
+line-height: 1.2;
+border-bottom: 1px solid #eee;
+}
+h1 .anchor {
+line-height: 1;
+}
+h2 {
+padding-bottom: 0.3em;
+font-size: 1.75em;
+line-height: 1.225;
+border-bottom: 1px solid #eee;
+}
+h2 .anchor {
+line-height: 1;
+}
+h3 {
+font-size: 1.5em;
+line-height: 1.43;
+}
+h3 .anchor {
+line-height: 1.2;
+}
+h4 {
+font-size: 1.25em;
+}
+h4 .anchor {
+line-height: 1.2;
+}
+h5 {
+font-size: 1em;
+}
+h5 .anchor {
+line-height: 1.1;
+}
+h6 {
+font-size: 1em;
+color: #777;
+}
+h6 .anchor {
+line-height: 1.1;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre {
+margin-top: 0;
+margin-bottom: 16px;
+}
+hr {
+height: 4px;
+padding: 0;
+margin: 16px 0;
+background-color: #e7e7e7;
+border: 0 none;
+}
+ul,
+ol {
+padding-left: 2em;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+li>p {
+margin-top: 16px;
+}
+dl {
+padding: 0;
+}
+dl dt {
+padding: 0;
+margin-top: 16px;
+font-size: 1em;
+font-style: italic;
+font-weight: bold;
+}
+dl dd {
+padding: 0 16px;
+margin-bottom: 16px;
+}
+blockquote {
+padding: 0 15px;
+color: #777;
+border-left: 4px solid #ddd;
+}
+blockquote>:first-child {
+margin-top: 0;
+}
+blockquote>:last-child {
+margin-bottom: 0;
+}
+table {
+display: block;
+width: 100%;
+overflow: auto;
+word-break: normal;
+word-break: keep-all;
+}
+table th {
+font-weight: bold;
+}
+table th,
+table td {
+padding: 6px 13px;
+border: 1px solid #ddd;
+}
+table tr {
+background-color: #fff;
+border-top: 1px solid #ccc;
+}
+table tr:nth-child(2n) {
+background-color: #f8f8f8;
+}
+img {
+max-width: 100%;
+box-sizing: content-box;
+background-color: #fff;
+}
+code {
+padding: 0;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+margin: 0;
+font-size: 85%;
+background-color: rgba(0,0,0,0.04);
+border-radius: 3px;
+}
+code:before,
+code:after {
+letter-spacing: -0.2em;
+content: "\00a0";
+}
+pre>code {
+padding: 0;
+margin: 0;
+font-size: 100%;
+word-break: normal;
+white-space: pre;
+background: transparent;
+border: 0;
+}
+.highlight {
+margin-bottom: 16px;
+}
+.highlight pre,
+pre {
+padding: 16px;
+overflow: auto;
+font-size: 85%;
+line-height: 1.45;
+background-color: #f7f7f7;
+border-radius: 3px;
+}
+.highlight pre {
+margin-bottom: 0;
+word-break: normal;
+}
+pre {
+word-wrap: normal;
+}
+pre code {
+display: inline;
+max-width: initial;
+padding: 0;
+margin: 0;
+overflow: initial;
+line-height: inherit;
+word-wrap: normal;
+background-color: transparent;
+border: 0;
+}
+pre code:before,
+pre code:after {
+content: normal;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font-size: 11px;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.pl-c {
+color: #969896;
+}
+.pl-c1,
+.pl-s .pl-v {
+color: #0086b3;
+}
+.pl-e,
+.pl-en {
+color: #795da3;
+}
+.pl-s .pl-s1,
+.pl-smi {
+color: #333;
+}
+.pl-ent {
+color: #63a35c;
+}
+.pl-k {
+color: #a71d5d;
+}
+.pl-pds,
+.pl-s,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sra,
+.pl-sr .pl-sre {
+color: #183691;
+}
+.pl-v {
+color: #ed6a43;
+}
+.pl-id {
+color: #b52a1d;
+}
+.pl-ii {
+background-color: #b52a1d;
+color: #f8f8f8;
+}
+.pl-sr .pl-cce {
+color: #63a35c;
+font-weight: bold;
+}
+.pl-ml {
+color: #693a17;
+}
+.pl-mh,
+.pl-mh .pl-en,
+.pl-ms {
+color: #1d3e81;
+font-weight: bold;
+}
+.pl-mq {
+color: #008080;
+}
+.pl-mi {
+color: #333;
+font-style: italic;
+}
+.pl-mb {
+color: #333;
+font-weight: bold;
+}
+.pl-md {
+background-color: #ffecec;
+color: #bd2c00;
+}
+.pl-mi1 {
+background-color: #eaffea;
+color: #55a532;
+}
+.pl-mdr {
+color: #795da3;
+font-weight: bold;
+}
+.pl-mo {
+color: #1d3e81;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.task-list-item {
+list-style-type: none;
+}
+.task-list-item+.task-list-item {
+margin-top: 3px;
+}
+.task-list-item input {
+margin: 0 0.35em 0.25em -1.6em;
+vertical-align: middle;
+}
+:checked+.radio-label {
+z-index: 1;
+position: relative;
+border-color: #4078c0;
+}
+.sourceLine {
+display: inline-block;
+}
+code .kw { color: #000000; }
+code .dt { color: #ed6a43; }
+code .dv { color: #009999; }
+code .bn { color: #009999; }
+code .fl { color: #009999; }
+code .ch { color: #009999; }
+code .st { color: #183691; }
+code .co { color: #969896; }
+code .ot { color: #0086b3; }
+code .al { color: #a61717; }
+code .fu { color: #63a35c; }
+code .er { color: #a61717; background-color: #e3d2d2; }
+code .wa { color: #000000; }
+code .cn { color: #008080; }
+code .sc { color: #008080; }
+code .vs { color: #183691; }
+code .ss { color: #183691; }
+code .im { color: #000000; }
+code .va {color: #008080; }
+code .cf { color: #000000; }
+code .op { color: #000000; }
+code .bu { color: #000000; }
+code .ex { color: #000000; }
+code .pp { color: #999999; }
+code .at { color: #008080; }
+code .do { color: #969896; }
+code .an { color: #008080; }
+code .cv { color: #008080; }
+code .in { color: #008080; }
+</style>
+<style>
+body {
+box-sizing: border-box;
+min-width: 200px;
+max-width: 980px;
+margin: 0 auto;
+padding: 45px;
+padding-top: 0px;
+}
+</style>
+
+
+</head>
+
+<body>
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Borehole Forensics 4 - Pumping Test 2018 - 2024
-
+<h1 id="borehole-forensics-4---pumping-test-2018---2024">Borehole
+Forensics 4 - Pumping Test 2018 - 2024</h1>
 <!-- badges: start -->
 
-[![License: CC BY
-4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14974957.svg)](https://doi.org/10.5281/zenodo.14974957)
-
+<p><a href="https://creativecommons.org/licenses/by/4.0/"><img role="img" aria-label="License: CC BY 4.0" src="data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMTYiIGhlaWdodD0iMjAiIHJvbGU9ImltZyIgYXJpYS1sYWJlbD0iTGljZW5zZTogQ0MgQlkgNC4wIj48dGl0bGU+TGljZW5zZTogQ0MgQlkgNC4wPC90aXRsZT48bGluZWFyR3JhZGllbnQgaWQ9InMiIHgyPSIwIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjYmJiIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+PC9saW5lYXJHcmFkaWVudD48Y2xpcFBhdGggaWQ9InIiPjxyZWN0IHdpZHRoPSIxMTYiIGhlaWdodD0iMjAiIHJ4PSIzIiBmaWxsPSIjZmZmIi8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjcikiPjxyZWN0IHdpZHRoPSI1MSIgaGVpZ2h0PSIyMCIgZmlsbD0iIzU1NSIvPjxyZWN0IHg9IjUxIiB3aWR0aD0iNjUiIGhlaWdodD0iMjAiIGZpbGw9IiM5ZjlmOWYiLz48cmVjdCB3aWR0aD0iMTE2IiBoZWlnaHQ9IjIwIiBmaWxsPSJ1cmwoI3MpIi8+PC9nPjxnIGZpbGw9IiNmZmYiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtZmFtaWx5PSJWZXJkYW5hLEdlbmV2YSxEZWphVnUgU2FucyxzYW5zLXNlcmlmIiB0ZXh0LXJlbmRlcmluZz0iZ2VvbWV0cmljUHJlY2lzaW9uIiBmb250LXNpemU9IjExMCI+PHRleHQgYXJpYS1oaWRkZW49InRydWUiIHg9IjI2NSIgeT0iMTUwIiBmaWxsPSIjMDEwMTAxIiBmaWxsLW9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgdGV4dExlbmd0aD0iNDEwIj5MaWNlbnNlPC90ZXh0Pjx0ZXh0IHg9IjI2NSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNDEwIj5MaWNlbnNlPC90ZXh0Pjx0ZXh0IGFyaWEtaGlkZGVuPSJ0cnVlIiB4PSI4MjUiIHk9IjE1MCIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyIgdHJhbnNmb3JtPSJzY2FsZSguMSkiIHRleHRMZW5ndGg9IjU1MCI+Q0MgQlkgNC4wPC90ZXh0Pjx0ZXh0IHg9IjgyNSIgeT0iMTQwIiB0cmFuc2Zvcm09InNjYWxlKC4xKSIgZmlsbD0iI2ZmZiIgdGV4dExlbmd0aD0iNTUwIj5DQyBCWSA0LjA8L3RleHQ+PC9nPjwvc3ZnPg==" alt="License: CC BY 4.0" /></a> <a href="https://doi.org/10.5281/zenodo.14974957"><img role="img" aria-label="DOI" src="data:image/svg+xml; charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgd2lkdGg9IjE5MC44NDM3NSIgaGVpZ2h0PSIyMCI+CiAgICAgICAgPGxpbmVhckdyYWRpZW50IGlkPSJiIiB4Mj0iMCIgeTI9IjEwMCUiPgogICAgICAgICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNiYmIiIHN0b3Atb3BhY2l0eT0iLjEiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLW9wYWNpdHk9Ii4xIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgICAgICA8bWFzayBpZD0iYSIgd2lkdGg9IjE5MC44NDM3NSIgaGVpZ2h0PSIyMCI+CiAgICAgICAgICAgIDxyZWN0IHdpZHRoPSIxOTAuODQzNzUiIGhlaWdodD0iMjAiIHJ4PSIzIgogICAgICAgICAgICBmaWxsPSIjZmZmIi8+CiAgICAgICAgPC9tYXNrPgogICAgICAgIDxnIG1hc2s9InVybCgjYSkiPgogICAgICAgICAgICA8cGF0aCBmaWxsPSIjNTU1IiBkPSJNMCAwaDMxLjM3NXYyMEgweiIgLz4KICAgICAgICAgICAgPHBhdGggZmlsbD0iIzAwN2VjNiIKICAgICAgICAgICAgZD0iTTMxLjM3NSAwaDE1OS40Njg3NXYyMEgzMS4zNzV6IgogICAgICAgICAgICAvPgogICAgICAgICAgICA8cGF0aCBmaWxsPSJ1cmwoI2IpIiBkPSJNMCAwaDE5MC44NDM3NXYyMEgweiIgLz4KICAgICAgICA8L2c+CiAgICAgICAgPGcgZmlsbD0iI2ZmZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkRlamFWdSBTYW5zLAogICAgICAgIFZlcmRhbmEsR2VuZXZhLHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTEiPgogICAgICAgICAgICA8dGV4dCB4PSIxNi4xODc1IiB5PSIxNSIgZmlsbD0iIzAxMDEwMSIKICAgICAgICAgICAgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgICAgICAgICBET0kKICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICA8dGV4dCB4PSIxNi4xODc1IiB5PSIxNCI+CiAgICAgICAgICAgICAgICBET0kKICAgICAgICAgICAgPC90ZXh0PgogICAgICAgICAgICA8dGV4dCB4PSIxMTAuNjA5Mzc1IgogICAgICAgICAgICB5PSIxNSIgZmlsbD0iIzAxMDEwMSIgZmlsbC1vcGFjaXR5PSIuMyI+CiAgICAgICAgICAgICAgICAxMC41MjgxL3plbm9kby4xNDk3NDk1NwogICAgICAgICAgICA8L3RleHQ+CiAgICAgICAgICAgIDx0ZXh0IHg9IjExMC42MDkzNzUiIHk9IjE0Ij4KICAgICAgICAgICAgICAgIDEwLjUyODEvemVub2RvLjE0OTc0OTU3CiAgICAgICAgICAgIDwvdGV4dD4KICAgICAgICA8L2c+CiAgICA8L3N2Zz4=" alt="DOI" /></a></p>
 <!-- badges: end -->
 
-This dataset contains borehole forensic pumping test data, capturing key
-parameters related to groundwater extraction, borehole performance, and
-water quality assessments. It includes information on the test
+<p>This dataset contains borehole forensic pumping test data, capturing
+key parameters related to groundwater extraction, borehole performance,
+and water quality assessments. It includes information on the test
 conditions, water levels, pumping rates, flow measurement methods, and
 water quality indicators such as pH, turbidity, and electrical
-conductivity.
-
-The dataset also documents permissions granted for testing, equipment
+conductivity.</p>
+<p>The dataset also documents permissions granted for testing, equipment
 used, and observations on borehole performance, such as whether the
 water level stabilized during pumping and whether the borehole passed
-the test.
-
-Potential Uses of the Dataset
-
-1.  Hydrogeological Analysis: Evaluating groundwater availability and
-    borehole efficiency.
-
-2.  Environmental Studies: Assessing water quality parameters.
-
-3.  Infrastructure Planning: Supporting water resource management and
-    borehole maintenance decisions.
-
-4.  Regulatory Compliance: Ensuring boreholes meet required operational
-    standards.
-
-## Installation
-
-You can install the development version of boreholeforensicspumpingtest
-from [GitHub](https://github.com/) with:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("openwashdata/boreholeforensicspumpingtest")
-```
-
-``` r
-## Run the following code in console if you don't have the packages
-## install.packages(c("dplyr", "knitr", "readr", "stringr", "gt", "kableExtra"))
-library(dplyr)
-library(knitr)
-library(readr)
-library(stringr)
-library(gt)
-library(kableExtra)
-library(ggplot2)
-library(lubridate)
-```
-
-Alternatively, you can download the individual datasets as a CSV or XLSX
-file from the table below.
-
-1.  Click Download CSV. A window opens that displays the CSV in your
-    browser.
-2.  Right-click anywhere inside the window and select “Save Page As…”.
-3.  Save the file in a folder of your choice.
-
-| dataset | CSV | XLSX |
-|:---|:---|:---|
-| boreholeforensicspumpingtest | [Download CSV](https://github.com/openwashdata/boreholeforensicspumpingtest/raw/main/inst/extdata/boreholeforensicspumpingtest.csv) | [Download XLSX](https://github.com/openwashdata/boreholeforensicspumpingtest/raw/main/inst/extdata/boreholeforensicspumpingtest.xlsx) |
-
-## Data
-
-The package provides access to the Borehole Forensics 4 - Pumping Test
-conducted between 2018 and 2024
-
-``` r
-library(boreholeforensicspumpingtest)
-```
-
-### boreholeforensicspumpingtest
-
-The dataset `boreholeforensicspumpingtest` has 203 observations and 44
-variables
-
-``` r
-boreholeforensicspumpingtest |> 
-  head(3) |> 
-  gt::gt() |>
-  gt::as_raw_html()
-```
-
+the test.</p>
+<p>Potential Uses of the Dataset</p>
+<ol style="list-style-type: decimal">
+<li><p>Hydrogeological Analysis: Evaluating groundwater availability and
+borehole efficiency.</p></li>
+<li><p>Environmental Studies: Assessing water quality
+parameters.</p></li>
+<li><p>Infrastructure Planning: Supporting water resource management and
+borehole maintenance decisions.</p></li>
+<li><p>Regulatory Compliance: Ensuring boreholes meet required
+operational standards.</p></li>
+</ol>
+<h2 id="installation">Installation</h2>
+<p>You can install the development version of
+boreholeforensicspumpingtest from <a href="https://github.com/">GitHub</a> with:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="co"># install.packages(&quot;devtools&quot;)</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">&quot;openwashdata/boreholeforensicspumpingtest&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="do">## Run the following code in console if you don&#39;t have the packages</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="do">## install.packages(c(&quot;dplyr&quot;, &quot;knitr&quot;, &quot;readr&quot;, &quot;stringr&quot;, &quot;gt&quot;, &quot;kableExtra&quot;))</span></span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a><span class="fu">library</span>(stringr)</span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a><span class="fu">library</span>(gt)</span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a><span class="fu">library</span>(kableExtra)</span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a><span class="fu">library</span>(lubridate)</span></code></pre></div>
+<p>Alternatively, you can download the individual datasets as a CSV or
+XLSX file from the table below.</p>
+<ol style="list-style-type: decimal">
+<li>Click Download CSV. A window opens that displays the CSV in your
+browser.</li>
+<li>Right-click anywhere inside the window and select “Save Page
+As…”.</li>
+<li>Save the file in a folder of your choice.</li>
+</ol>
+<table>
+<thead>
+<tr class="header">
+<th align="left">dataset</th>
+<th align="left">CSV</th>
+<th align="left">XLSX</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">boreholeforensicspumpingtest</td>
+<td align="left"><a href="https://github.com/openwashdata/boreholeforensicspumpingtest/raw/main/inst/extdata/boreholeforensicspumpingtest.csv">Download
+CSV</a></td>
+<td align="left"><a href="https://github.com/openwashdata/boreholeforensicspumpingtest/raw/main/inst/extdata/boreholeforensicspumpingtest.xlsx">Download
+XLSX</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="data">Data</h2>
+<p>The package provides access to the Borehole Forensics 4 - Pumping
+Test conducted between 2018 and 2024</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">library</span>(boreholeforensicspumpingtest)</span></code></pre></div>
+<h3 id="boreholeforensicspumpingtest">boreholeforensicspumpingtest</h3>
+<p>The dataset <code>boreholeforensicspumpingtest</code> has 203
+observations and 44 variables</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>boreholeforensicspumpingtest <span class="sc">|&gt;</span> </span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">3</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>  gt<span class="sc">::</span><span class="fu">gt</span>() <span class="sc">|&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a>  gt<span class="sc">::</span><span class="fu">as_raw_html</span>()</span></code></pre></div>
 <div id="kmscjgifge" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-  &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
+  
+  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif, &#39;Apple Color Emoji&#39;, &#39;Segoe UI Emoji&#39;, &#39;Segoe UI Symbol&#39;, &#39;Noto Color Emoji&#39;; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
       <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="date_of_test" style="border-style: none; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 6px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" bgcolor="#FFFFFF" valign="bottom" align="right">date_of_test</th>
@@ -193,7 +786,7 @@ boreholeforensicspumpingtest |>
 <td headers="longitude" class="gt_row gt_right" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: right; font-variant-numeric: tabular-nums;" valign="middle" align="right">35.18867</td>
 <td headers="name" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">Chindunguli borehole 2</td>
 <td headers="type_of_waterpoint" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">Borehole or tubewell</td>
-<td headers="description" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">Near Juma's Maizemill</td>
+<td headers="description" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">Near Juma&#39;s Maizemill</td>
 <td headers="type_of_test" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">Step Drawdown</td>
 <td headers="pumping_test_possible" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">Yes</td>
 <td headers="pumping_test_not_possible_reason" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">NA</td>
@@ -276,12 +869,12 @@ boreholeforensicspumpingtest |>
 <td headers="other_borehole_pass_reason" class="gt_row gt_center" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: center;" valign="middle" align="center">NA</td>
 <td headers="comments_on_pumping_test" class="gt_row gt_left" style="border-style: none; padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; text-align: left;" valign="middle" align="left">Generator turned off due to fault near end of third step.</td></tr>
   </tbody>
-  &#10;  
+  
+  
 </table>
 </div>
 
-For an overview of the variable names, see the following table.
-
+<p>For an overview of the variable names, see the following table.</p>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:200px; ">
 
 <table class="table table-striped" style="margin-left: auto; margin-right: auto;">
@@ -801,51 +1394,43 @@ Additional comments or observations about the pumping test.
 
 </div>
 
-## Example
+<h2 id="example">Example</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="co"># Create the plot</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="fu">library</span>(boreholeforensicspumpingtest)</span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="co"># Extract distinct year</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>year <span class="ot">&lt;-</span> <span class="fu">year</span>(boreholeforensicspumpingtest<span class="sc">$</span>date_of_test)</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="co"># Create the plot</span></span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a><span class="fu">ggplot</span>(boreholeforensicspumpingtest, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> static_water_level)) <span class="sc">+</span></span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">&quot;Static Water Level by Year&quot;</span>,</span>
+<span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">&quot;Year&quot;</span>,</span>
+<span id="cb5-14"><a href="#cb5-14" tabindex="-1"></a>    <span class="at">y =</span> <span class="st">&quot;Static Water Level (m below reference point)&quot;</span></span>
+<span id="cb5-15"><a href="#cb5-15" tabindex="-1"></a>  )</span></code></pre></div>
+<img role="img" src="data:image/png;base64,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" width="100%" style="display: block; margin: auto;" />
 
-``` r
-# Create the plot
-library(boreholeforensicspumpingtest)
+<h2 id="license">License</h2>
+<p>Data are available as <a href="https://github.com/openwashdata/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md">CC-BY</a>.</p>
+<h2 id="citation">Citation</h2>
+<p>Please cite this package using:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">citation</span>(<span class="st">&quot;boreholeforensicspumpingtest&quot;</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" tabindex="-1"></a><span class="co">#&gt; To cite package &#39;boreholeforensicspumpingtest&#39; in publications use:</span></span>
+<span id="cb6-3"><a href="#cb6-3" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb6-4"><a href="#cb6-4" tabindex="-1"></a><span class="co">#&gt;   Mhango E, Paterson F, Kumpukwe P (2025). _boreholeforensicspumpingtest: What the Package Does (One Line, Title Case)_. R</span></span>
+<span id="cb6-5"><a href="#cb6-5" tabindex="-1"></a><span class="co">#&gt;   package version 0.0.0.9000, &lt;https://github.com/openwashdata/boreholeforensicspumpingtest&gt;.</span></span>
+<span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="co">#&gt; A BibTeX entry for LaTeX users is</span></span>
+<span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a><span class="co">#&gt; </span></span>
+<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a><span class="co">#&gt;   @Manual{,</span></span>
+<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="co">#&gt;     title = {boreholeforensicspumpingtest: What the Package Does (One Line, Title Case)},</span></span>
+<span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a><span class="co">#&gt;     author = {Emmanuel Mhango and Finlay Paterson and Paul Kumpukwe},</span></span>
+<span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a><span class="co">#&gt;     year = {2025},</span></span>
+<span id="cb6-13"><a href="#cb6-13" tabindex="-1"></a><span class="co">#&gt;     note = {R package version 0.0.0.9000},</span></span>
+<span id="cb6-14"><a href="#cb6-14" tabindex="-1"></a><span class="co">#&gt;     url = {https://github.com/openwashdata/boreholeforensicspumpingtest},</span></span>
+<span id="cb6-15"><a href="#cb6-15" tabindex="-1"></a><span class="co">#&gt;   }</span></span></code></pre></div>
 
-# Extract distinct year
-year <- year(boreholeforensicspumpingtest$date_of_test)
-
-# Create the plot
-ggplot(boreholeforensicspumpingtest, aes(x = year, y = static_water_level)) +
-  geom_point() +
-  theme_minimal() +
-  labs(
-    title = "Static Water Level by Year",
-    x = "Year",
-    y = "Static Water Level (m below reference point)"
-  )
-```
-
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" />
-
-## License
-
-Data are available as
-[CC-BY](https://github.com/openwashdata/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
-
-## Citation
-
-Please cite this package using:
-
-``` r
-citation("boreholeforensicspumpingtest")
-#> To cite package 'boreholeforensicspumpingtest' in publications use:
-#> 
-#>   Mhango E, Paterson F, Kumpukwe P (2025). _boreholeforensicspumpingtest: What the Package Does (One Line, Title Case)_. R
-#>   package version 0.0.0.9000, <https://github.com/openwashdata/boreholeforensicspumpingtest>.
-#> 
-#> A BibTeX entry for LaTeX users is
-#> 
-#>   @Manual{,
-#>     title = {boreholeforensicspumpingtest: What the Package Does (One Line, Title Case)},
-#>     author = {Emmanuel Mhango and Finlay Paterson and Paul Kumpukwe},
-#>     year = {2025},
-#>     note = {R package version 0.0.0.9000},
-#>     url = {https://github.com/openwashdata/boreholeforensicspumpingtest},
-#>   }
-```
+</body>
+</html>

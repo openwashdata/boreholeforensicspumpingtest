@@ -157,7 +157,6 @@ ggplot(boreholeforensicspumpingtest, aes(x = year, y = static_water_level)) +
 
 
 ```
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" style="display: block; margin: auto;" />
 
 ## License
 

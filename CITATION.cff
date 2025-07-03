@@ -1,0 +1,36 @@
+# --------------------------------------------
+# CITATION file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# --------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "boreholeforensicspumpingtest" in publications use:'
+type: software
+license: CC-BY-4.0
+title: 'boreholeforensicspumpingtest: Borehole Forensics 4 - Pumping Test Data 2018-2024'
+version: 0.0.0.9000
+doi: 10.5281/zenodo.14974957
+abstract: This dataset contains borehole forensic pumping test data, capturing key
+  parameters related to groundwater extraction, borehole performance, and water quality
+  assessments. It includes information on the test conditions, water levels, pumping
+  rates, flow measurement methods, and water quality indicators such as pH, turbidity,
+  and electrical conductivity. The dataset also documents permissions granted for
+  testing, equipment used, and observations on borehole performance.
+authors:
+- family-names: Mhango
+  given-names: Emmanuel
+  email: emmanuellmhango@gmail.com
+  orcid: https://orcid.org/0000-0003-3197-6244
+- family-names: Paterson
+  given-names: Finlay
+- family-names: Kumpukwe
+  given-names: Paul
+repository-code: https://github.com/openwashdata/boreholeforensicspumpingtest
+url: https://github.com/openwashdata/boreholeforensicspumpingtest
+date-released: '2025-03-05'
+contact:
+- family-names: Mhango
+  given-names: Emmanuel
+  email: emmanuellmhango@gmail.com
+  orcid: https://orcid.org/0000-0003-3197-6244
+

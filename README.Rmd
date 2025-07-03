@@ -28,13 +28,14 @@ knitr::opts_chunk$set(
 
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14974957.svg)](https://doi.org/10.5281/zenodo.14974957)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14974957.svg)](https://zenodo.org/doi/10.5281/zenodo.14974957)
 
 <!-- badges: end -->
 
 This dataset contains borehole forensic pumping test data, capturing key
 parameters related to groundwater extraction, borehole performance, and
-water quality assessments. The data was collected by BASEFlow. It includes information on the test
+water quality assessments. It includes information on the test
 conditions, water levels, pumping rates, flow measurement methods, and
 water quality indicators such as pH, turbidity, and electrical
 conductivity.
@@ -54,6 +55,8 @@ Potential Uses of the Dataset
 
 4. Regulatory Compliance: Ensuring boreholes meet required operational standards.
 
+
+The data was collected by BASEFlow with funding from the [Open Research Data Program of the ETH Board](https://ethrat.ch/en/eth-domain/open-research-data/).
 
 ## Installation
 

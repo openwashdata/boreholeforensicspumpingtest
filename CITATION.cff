@@ -8,7 +8,7 @@ message: 'To cite package "boreholeforensicspumpingtest" in publications use:'
 type: software
 license: CC-BY-4.0
 title: 'boreholeforensicspumpingtest: Borehole Forensics 4 - Pumping Test Data 2018-2024'
-version: 0.0.0.9000
+version: 0.1.0
 doi: 10.5281/zenodo.14974957
 abstract: This dataset contains borehole forensic pumping test data, capturing key
   parameters related to groundwater extraction, borehole performance, and water quality
@@ -27,7 +27,7 @@ authors:
   given-names: Paul
 repository-code: https://github.com/openwashdata/boreholeforensicspumpingtest
 url: https://github.com/openwashdata/boreholeforensicspumpingtest
-date-released: '2025-03-05'
+date-released: '2025-07-03'
 contact:
 - family-names: Mhango
   given-names: Emmanuel

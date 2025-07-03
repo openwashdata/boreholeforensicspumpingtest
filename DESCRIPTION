@@ -1,5 +1,5 @@
 Package: boreholeforensicspumpingtest
-Title: What the Package Does (One Line, Title Case)
+Title: Borehole Forensics 4 - Pumping Test Data 2018-2024
 Version: 0.0.0.9000
 Authors@R: c(
     person("Emmanuel", "Mhango", , "emmanuellmhango@gmail.com", role = c("aut", "cre"),
@@ -12,7 +12,13 @@ Authors@R: c(
     person("Given", "Nyasulu", role = "ctb"),
     person("Feston", "Bwanyula", role ="ctb")
   )
-Description: What the package does (one paragraph).
+Description: This dataset contains borehole forensic pumping test data, capturing key
+    parameters related to groundwater extraction, borehole performance, and
+    water quality assessments. It includes information on the test conditions,
+    water levels, pumping rates, flow measurement methods, and water quality
+    indicators such as pH, turbidity, and electrical conductivity. The dataset
+    also documents permissions granted for testing, equipment used, and
+    observations on borehole performance.
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

@@ -1,0 +1,17 @@
+
+bibentry(bibtype = "Misc",
+         key = "mhango_etall:2025",
+         title = "boreholeforensicspumpingtest: Borehole Forensics 4 - Pumping Test Data 2018-2024",
+         author = c(person(given = "Emmanuel",
+                           family = "Mhango",
+                           email = "emmanuellmhango@gmail.com",
+                           comment = c(ORCID = "0000-0003-3197-6244")),
+                    person(given = "Finlay",
+                           family = "Paterson"),
+                    person(given = "Paul",
+                           family = "Kumpukwe")),
+         year = "2025",
+         doi = "10.5281/zenodo.14974957",
+         url = "https://github.com/openwashdata/boreholeforensicspumpingtest",
+         abstract = "This dataset contains borehole forensic pumping test data, capturing key parameters related to groundwater extraction, borehole performance, and water quality assessments. It includes information on the test conditions, water levels, pumping rates, flow measurement methods, and water quality indicators such as pH, turbidity, and electrical conductivity. The dataset also documents permissions granted for testing, equipment used, and observations on borehole performance.",
+         version = "0.0.0.9000")

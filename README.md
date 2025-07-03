@@ -7,7 +7,8 @@
 
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14974957.svg)](https://doi.org/10.5281/zenodo.14974957)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14974957.svg)](https://zenodo.org/doi/10.5281/zenodo.14974957)
 
 <!-- badges: end -->
 
@@ -96,7 +97,7 @@ boreholeforensicspumpingtest |>
   gt::as_raw_html()
 ```
 
-<div id="ixwdlazsle" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="ekhpdxsybd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -288,518 +289,883 @@ For an overview of the variable names, see the following table.
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:200px; ">
 
-<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<table class="table table-striped" style="color: black; margin-left: auto; margin-right: auto;">
+
 <thead>
+
 <tr>
+
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+
 variable_name
 </th>
+
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+
 variable_type
 </th>
+
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+
 description
 </th>
+
 </tr>
+
 </thead>
+
 <tbody>
+
 <tr>
+
 <td style="text-align:left;">
+
 date_of_test
 </td>
+
 <td style="text-align:left;">
+
 Date
 </td>
+
 <td style="text-align:left;">
+
 Date the borehole pumping test was conducted.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 administrative_region
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Geographic region where the water point is located.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 latitude
 </td>
+
 <td style="text-align:left;">
+
 numeric
 </td>
+
 <td style="text-align:left;">
+
 Latitude coordinate of the water point.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 longitude
 </td>
+
 <td style="text-align:left;">
+
 numeric
 </td>
+
 <td style="text-align:left;">
+
 Longitude coordinate of the water point.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 name
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Name of the water point or borehole.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 type_of_waterpoint
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Classification of the water point.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 description
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 A brief description of the water point.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 type_of_test
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Type of pumping test conducted on the borehole.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 pumping_test_possible
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Indicates if the pumping test was successfully completed.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 pumping_test_not_possible_reason
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Reason why the pumping test could not be completed, if applicable.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 water_point_committee_permission
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Indicates whether the water point committee approved the test.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 district_water_office_permission
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Indicates whether the district water office approved the test.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 static_water_level
 </td>
+
 <td style="text-align:left;">
+
 numeric
 </td>
+
 <td style="text-align:left;">
+
 Water level below the reference point before the test started (in
 meters).
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 water_level_reference_point
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Reference point used to measure the water level.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 other_water_level_reference_point
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Additional reference point for measuring water level, if applicable.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 reference_level
 </td>
+
 <td style="text-align:left;">
+
 numeric
 </td>
+
 <td style="text-align:left;">
+
 Measurement of the reference level relative to ground level (in meters).
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 pump_intake_depth
 </td>
+
 <td style="text-align:left;">
+
 numeric
 </td>
+
 <td style="text-align:left;">
+
 Depth of the pump intake within the borehole (in meters).
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 total_hole_depth
 </td>
+
 <td style="text-align:left;">
+
 numeric
 </td>
+
 <td style="text-align:left;">
+
 Total depth of the borehole (in meters).
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 was_a_water_level_logger_used
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Indicates if a water level logger was used during the test.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 was_a_flow_meter_used
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Indicates if a flow meter was used during the pumping test.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 other_flow_meter_used
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 Indicates if an alternative flow meter was used during the test.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 bucket_size_in_litres
 </td>
+
 <td style="text-align:left;">
+
 numeric
 </td>
+
 <td style="text-align:left;">
+
 Volume of the bucket used for manual flow measurements (in liters).
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 index_1
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 Internal logical index variable for tracking purposes.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 time_in_mins
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 Indicates if time was recorded in minutes during the test.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 water_level_in_mbrp
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 Indicates if the water level was measured in meters below the reference
 point.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 flowmeter_total
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 Indicates if the total flowmeter reading was recorded.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 flow_rate_in_liters_per_second
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 Indicates if the flow rate was measured in liters per second.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 flow_rate_method
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 Indicates if the method for measuring flow rate was recorded.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 index_2
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 A second internal logical index variable for tracking purposes.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 time_of_sample_in_min
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 Indicates if the sampling time was recorded in minutes.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 ec_in_ms_per_cm
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 Indicates if electrical conductivity (EC) was measured in millisiemens
 per centimeter.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 tds_ppt
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 Indicates if total dissolved solids (TDS) were recorded in parts per
 thousand (ppt).
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 temperature_in_celcius
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 Indicates if the temperature of the water was recorded in degrees
 Celsius.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 ph
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 Indicates if the pH level of the water was measured.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 turbidity_ntu
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 Indicates if turbidity was measured in nephelometric turbidity units
 (NTU).
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 Imhoff_cone_cubic_centimeter_per_liter
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 Indicates if sediment concentration was measured using an Imhoff cone.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 water_level_stabilised
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Indicates if the water level stabilized during pumping at 0.25 liters
 per second.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 dwl_at_0.25lps
 </td>
+
 <td style="text-align:left;">
+
 numeric
 </td>
+
 <td style="text-align:left;">
+
 Depth to the water level at a 0.25 liters per second pumping rate (in
 meters).
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 max_pumping_rate
 </td>
+
 <td style="text-align:left;">
+
 numeric
 </td>
+
 <td style="text-align:left;">
+
 Maximum pumping rate successfully achieved during the test (in liters
 per second).
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 dwl_at_max_rate
 </td>
+
 <td style="text-align:left;">
+
 numeric
 </td>
+
 <td style="text-align:left;">
+
 Depth to the water level at the maximum pumping rate (in meters).
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 silt_ejected_during_test
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Indicates whether silt was observed being ejected from the borehole
 during the test.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 borehole_passed
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Indicates if the borehole passed the pumping test based on performance
 criteria.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 other_borehole_pass_reason
 </td>
+
 <td style="text-align:left;">
+
 logical
 </td>
+
 <td style="text-align:left;">
+
 Additional explanation regarding the boreholes performance in the
 pumping test, if applicable.
 </td>
+
 </tr>
+
 <tr>
+
 <td style="text-align:left;">
+
 comments_on_pumping_test
 </td>
+
 <td style="text-align:left;">
+
 character
 </td>
+
 <td style="text-align:left;">
+
 Additional comments or observations regarding the pumping test.
 </td>
+
 </tr>
+
 </tbody>
+
 </table>
 
 </div>
@@ -840,17 +1206,20 @@ citation("boreholeforensicspumpingtest")
 #> To cite package 'boreholeforensicspumpingtest' in publications use:
 #> 
 #>   Mhango E, Paterson F, Kumpukwe P (2025).
-#>   _boreholeforensicspumpingtest: What the Package Does (One Line, Title
-#>   Case)_. R package version 0.0.0.9000,
+#>   "boreholeforensicspumpingtest: Borehole Forensics 4 - Pumping Test
+#>   Data 2018-2024." doi:10.5281/zenodo.14974957
+#>   <https://doi.org/10.5281/zenodo.14974957>,
 #>   <https://github.com/openwashdata/boreholeforensicspumpingtest>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Manual{,
-#>     title = {boreholeforensicspumpingtest: What the Package Does (One Line, Title Case)},
+#>   @Misc{mhango_etall:2025,
+#>     title = {boreholeforensicspumpingtest: Borehole Forensics 4 - Pumping Test Data 2018-2024},
 #>     author = {Emmanuel Mhango and Finlay Paterson and Paul Kumpukwe},
 #>     year = {2025},
-#>     note = {R package version 0.0.0.9000},
+#>     doi = {10.5281/zenodo.14974957},
 #>     url = {https://github.com/openwashdata/boreholeforensicspumpingtest},
+#>     abstract = {This dataset contains borehole forensic pumping test data, capturing key parameters related to groundwater extraction, borehole performance, and water quality assessments. It includes information on the test conditions, water levels, pumping rates, flow measurement methods, and water quality indicators such as pH, turbidity, and electrical conductivity. The dataset also documents permissions granted for testing, equipment used, and observations on borehole performance.},
+#>     version = {0.0.0.9000},
 #>   }
 ```

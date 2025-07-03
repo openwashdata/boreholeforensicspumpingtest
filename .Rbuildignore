@@ -7,3 +7,5 @@
 ^docs$
 ^pkgdown$
 ^CITATION\.cff$
+^inst/CITATION.*$
+^.claude$

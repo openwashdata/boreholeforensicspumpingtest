@@ -9,3 +9,4 @@
 ^CITATION\.cff$
 ^inst/CITATION.*$
 ^.claude$
+^\.github$

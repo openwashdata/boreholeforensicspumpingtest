@@ -14,6 +14,8 @@
 
 <!-- badges: end -->
 
+A data package published by [openwashdata](https://openwashdata.org).
+
 This dataset contains borehole forensic pumping test data, capturing key
 parameters related to groundwater extraction, borehole performance, and
 water quality assessments. It includes information on the test

@@ -1,7 +1,5 @@
 # Borehole Forensics 4 - Pumping Test 2018 - 2024
 
-A data package published by [openwashdata](https://openwashdata.org).
-
 This dataset contains borehole forensic pumping test data, capturing key
 parameters related to groundwater extraction, borehole performance, and
 water quality assessments. It includes information on the test
@@ -175,6 +173,8 @@ Data are available as
 [CC-BY](https://github.com/openwashdata/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 Please cite this package using:
 

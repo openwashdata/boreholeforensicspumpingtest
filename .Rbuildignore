@@ -10,3 +10,5 @@
 ^inst/CITATION.*$
 ^.claude$
 ^\.github$
+^_brand\.yml$
+^logos$

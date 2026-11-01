@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Borehole Forensics 4 - Pumping Test 2018 - 2024
+# Borehole Forensics 4 - Pumping Test 2018 - 2024 <a href="https://openwashdata.org"><img src="man/figures/logo.png" align="right" width="120" alt="openwashdata" /></a>
 
 <!-- badges: start -->
 
@@ -13,8 +13,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15800110.svg)](https://zenodo.org/doi/10.5281/zenodo.15800110)
 
 <!-- badges: end -->
-
-A data package published by [openwashdata](https://openwashdata.org).
 
 This dataset contains borehole forensic pumping test data, capturing key
 parameters related to groundwater extraction, borehole performance, and
@@ -1202,6 +1200,8 @@ Data are available as
 [CC-BY](https://github.com/openwashdata/%7B%7B%7Bpackagename%7D%7D%7D/blob/main/LICENSE.md).
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 Please cite this package using:
 
